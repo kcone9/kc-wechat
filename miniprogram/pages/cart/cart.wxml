@@ -1,0 +1,49 @@
+<view class="body {{cart?'active':''}}">
+  <view class='empty'>
+    <image src='https://kcone.applinzi.com/chat/icon/Cart.png'></image>
+    <view class='text'>
+      <text>购物车还是空的，赶紧行动吧！</text>
+    </view>
+    <button bindtap="shopping">去逛逛</button>
+  </view>
+</view>
+<view class="hr {{!cart?'active':''}}"></view>
+<view class="detail {{!cart?'active':''}}">
+  <view class='futher'wx:for="{{list}}" wx:key="index" wx:if="{{list.length>0}}">
+    <view style="transform:{{item.late}}">
+      <view class='left'>
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='right'>
+        <view class='title'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='pro'>
+          <text>{{item.pro}}</text>
+        </view>
+        <view class='label'>
+          <text>{{item.label}}</text>
+        </view>
+        <view class='yell'>
+          <text>{{item.yell}}</text>
+        </view>
+        <view class='price'>
+          <text>￥{{item.price}}</text>
+        </view>
+        <view class='contant'>
+          <text>{{item.contant}}条好评</text>
+        </view>
+        <view class='click' catchtap="oper" data-id="{{index}}">
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+      </view>
+      <view class='hid' >
+        <view class='go'><text>到店铺</text></view>
+        <view class='del' bindtap='del' data-id="{{index}}"><text>删除</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<login id="login"  bind:showdata="showdata"/>

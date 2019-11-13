@@ -1,0 +1,5 @@
+.myscroll{
+  width:100%;
+  height:600rpx;
+  /* border:1px solid red; */
+}

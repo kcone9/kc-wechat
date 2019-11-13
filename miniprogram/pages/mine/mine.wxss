@@ -1,0 +1,167 @@
+.header{
+  width:100%;
+  height:14vh;
+  background-image:url(https://static.biyao.com/mnew/img/master/personalCenter/img_my_background@2x_14c0b34.jpg);
+  background-position:center top;
+  background-repeat:no-repeat;
+  padding:0 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.header>.right>.border,.order>.left>.all,.order>.right>view,.privilege>.content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.header>.left{
+  width:50%;
+  height:10vh;
+  display:flex;
+  align-items:center;
+}
+.header>.left>.one>image{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50px;
+  border:2px solid #fff;
+}
+.header>.left>.two{
+  height:6vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:space-between;
+  margin:0 18rpx;
+  flex-direction:column;
+}
+.header>.left>.three{
+  height:6vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+.header>.left>.three>image{
+  width:40rpx;
+  height:40rpx;
+}
+.header>.left>.two>text{
+  font-size:15px;
+  color:#fff;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.header>.left>.two>image{
+  width:40rpx;
+  height:20rpx;
+}
+.header>.right{
+  width:30%;
+  height:10vh;
+  display:flex;
+}
+.header>.right>.border{
+  width:50%;
+  height:10vh;
+}
+.header>.right>.border>image{
+  width:40rpx;
+  height:40rpx;
+  margin-bottom:6rpx;
+}
+.header>.right>.border>text{
+  font-size:10px;
+  color:#fff;
+}
+.order{
+  width:100%;
+  height:14vh;
+  display:flex;
+}
+.order>.left{
+  width:27%;
+  height:14vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.order>.left>.all{
+  width:70%;
+  height:14vh;
+}
+.order>.left>.all>image{
+  width:48rpx;
+  height:48rpx;
+}
+.order>.left>.all>.top{
+  font-size:11px;
+  color:#666;
+}
+.order>.left>.all>.bottom{
+  font-size:10px;
+  color:#999;
+}
+.order>.left>image{
+  width:12rpx;
+  height:10vh;
+  margin-left:6rpx;
+}
+.order>.right{
+  width:70%;
+  height:14vh;
+  display:flex;
+}
+.order>.right>view{
+  width:25%;
+  height:14vh;
+}
+.order>.right>view>image{
+  width:48rpx;
+  height:48rpx;
+  margin-bottom:6rpx;
+}
+.order>.right>view>text{
+  font-size:12px;
+  color:#666;
+}
+.privilege{
+  width:100%;
+  height:14vh;
+  display:flex;
+  align-items:center;
+  padding-left:2%;
+}
+.privilege>.content{
+  width:20%;
+  height:12vh;
+}
+.privilege>.content>image{
+  width:48rpx;
+  height:48rpx;
+  margin-bottom:6rpx;
+}
+.privilege>.content>text{
+  font-size:12px;
+}
+.hr{
+  width:100%;
+  height:1vh;
+  background-color:#f2f2f2;
+}
+.lift{
+  width:100%;
+  height:7vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.lift>text{
+  font-size:14px;
+  text-decoration:underline;
+}
+.lift>.back{
+  margin-left:6rpx;
+}
+
+

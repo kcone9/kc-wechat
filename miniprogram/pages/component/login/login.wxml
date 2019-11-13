@@ -1,0 +1,8 @@
+<view class='login'style="display:{{login}}">
+  <view class='content'>
+    <view class='title'><text>{{message}}</text></view>
+    <view class='user'><input placeholder='请输入用户名' bindinput="user"></input></view>
+    <view class='pass'><input placeholder='请输入密码' bindinput="pass" password></input></view>
+    <button bindtap="login">登录</button>
+  </view>
+</view>

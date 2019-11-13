@@ -1,0 +1,115 @@
+.search>view,.container>.right_nav>.bigtitle,.container>.right_nav>.bigtitle>view,.container>.right_nav>.royal>.content>view>.image,.container>.right_nav>.royal>.content>view>.text{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.body{
+  width:100%;
+  height:100vh;
+}
+.container{
+  display:flex;
+  height:92vh;
+}
+.container>.left_nav{
+  width:26%;
+  height:92vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color:#f7f7f7;
+}
+.container>.left_nav>.content{
+  width:100%;
+  height:74rpx;
+}
+.container>.left_nav>.active{
+  color:#7f4395;
+  border-left:4px solid #7f4395;
+  background-color:#fff;
+}
+.container>.left_nav>.content>text{
+  font-size:12px;
+  display:block;
+  width:100%;
+  height:74rpx;
+  text-align:center;
+  line-height:74rpx;
+}
+.container>.right_nav{
+  width:74%;
+  height:100%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+.container>.right_nav>.bigtitle{
+  width:100%;
+  height:10vh;
+}
+.container>.right_nav>.bigtitle>view{
+  width:280rpx;
+  height:80rpx;
+}
+.container>.right_nav>.bigtitle>view>text{
+  font-size:12px;
+  white-space:nowrap;
+  margin:0 8rpx;
+}
+.container>.right_nav>.bigtitle>view>.icon{
+  width:28rpx;
+  height:28rpx;
+  margin-right:8rpx;
+}
+.container>.right_nav>.bigtitle>view>.right{
+  width:100rpx;
+  height:6rpx;
+  background:linear-gradient(to right ,#fff,#949494);
+}
+.container>.right_nav>.bigtitle>view>.left{
+  width:100rpx;
+  height:6rpx;
+  background:linear-gradient(to left ,#fff,#949494);
+}
+.container>.right_nav>.royal{
+  width:100%;
+  margin-bottom:66rpx;
+}
+.container>.right_nav>.royal>.title{
+  width:100%;
+  height:5vh;
+  font-size:12px;
+  display:flex;
+  justify-content:center;
+}
+.container>.right_nav>.royal>.title>view{
+  width:90%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:#f3f3f3 1px solid;
+}
+.container>.right_nav>.royal>.content{
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+}
+.container>.right_nav>.royal>.content>view{
+  width:33.33%;
+  height:20vh;
+}
+.container>.right_nav>.royal>.content>view>.image{
+  width:100%;
+  height:16vh;
+
+}
+.container>.right_nav>.royal>.content>view>.image>image{
+  width:134rpx;
+  height:134rpx;
+}
+.container>.right_nav>.royal>.content>view>.text{
+  width:100%;
+  height:4vh;
+}
+.container>.right_nav>.royal>.content>view>.text>text{
+  font-size:12px;
+}

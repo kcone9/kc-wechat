@@ -1,0 +1,65 @@
+.login{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:12;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:rgba(0,0,0,0.7);
+}
+.login>.content{
+  width:80%;
+  height:46vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:#fff;
+  border-radius:4px;
+}
+.login>.content>.title{
+  width:80%;
+  height:8vh;
+  margin-top:1vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.login>.content>.title>text{
+  font-size:36rpx;
+  color:#F7A701;
+}
+.login>.content>.user{
+  margin-top:3vh;
+  margin-bottom:2vh;
+}
+.login>.content>.pass,.login>.content>.user{
+  width:86%;
+  height:8vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid #FB4C81;
+  border-radius:4px;
+}
+.login>.content>.user>input,.login>.content>.pass>input{
+  border-bottom:1px solid #f4f4f4;
+  width:90%;
+  padding-left:1vw;
+  height:7vh;
+  color:#666;
+  font-size:28rpx;
+}
+.login>.content>button{
+  width:80%;
+  height:7vh;
+  font-size:32rpx;
+  margin-top:3vh;
+  background-color:#7F4395;
+  color:#fff;
+}
+
+
+

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/classify/classify",
+    "pages/all/all"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "万世商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": false,
+    "color": "black",
+    "selectedColor": "#13227A",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/tabBar/home.png",
+        "selectedIconPath": "./pages/tabBar/homes.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./pages/tabBar/class.png",
+        "selectedIconPath": "./pages/tabBar/classes.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./pages/tabBar/cart.png",
+        "selectedIconPath": "./pages/tabBar/carts.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./pages/tabBar/user.png",
+        "selectedIconPath": "./pages/tabBar/users.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

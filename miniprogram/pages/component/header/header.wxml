@@ -1,0 +1,6 @@
+<view class='search'>
+  <view>
+    <image src='https://kcone.applinzi.com/chat/icon/search.png'></image>
+    <input type='search' placeholder='请输入要搜索的商品'></input>
+  </view>
+</view>

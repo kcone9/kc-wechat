@@ -1,0 +1,49 @@
+<view class='classify' hidden="{{shows}}">
+  <view>热门</view>
+  <view bindtap="price">
+    <text>价格</text>
+    <image src='{{priceurl}}' class='priceimg' style="transform:{{pricetrans}}"></image>
+  </view>
+  <view catchtap='classf'>
+    <text>全部分类</text>
+    <image src='https://kcone.applinzi.com/chat/icon/arr_down.png' style="transform:{{classify}}" class='allimg'></image>
+  </view>
+</view>
+<view class="other" hidden="{{!shows}}" scroll-y>
+  <view class='futher'>
+    <view wx:for="{{otherlist}}" wx:key="index" bindtap="otherbtn" data-id="{{index}}" class="{{item.cb?'active':''}}" style="width:{{item.titlt.length>2?'130':'60'}}">
+      {{item.titlt}}
+    </view>
+  </view>
+  <view class='abs' bindtap="otherrotate">
+    <image  src='https://kcone.applinzi.com/chat/icon/arr_down.png' style="transform:{{othertrans}}"></image>
+  </view>
+</view>
+<view class='shade' style="overflow:{{nav_shade}}" >
+  <view class='message' capture-catch:touchstart="clear" data-id="1">
+    <view class='nav' catchtap="go" data-id="2">
+      <button wx:for="{{nav}}" wx:key="index">{{item.title}}</button>
+    </view>
+  </view>
+</view>
+<view class='container'>
+  <view wx:for="{{details}}" wx:key="index" class="{{item.cb?'borright':''}}" bindtap="jump" data-pid="{{item.cid}}">
+    <view class='image'>
+      <view class='abs'>新手专享</view>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='content'>
+      <view class='price'>
+        <text class='new'>￥{{item.price}}</text>
+        <text class='yarm' wx:if="{{item.prices=='0' ? true:false}}">原价￥{{item.prices}}</text>
+      </view>
+      <view class='label'>
+        <text class='one' wx:if="{{item.label=='' ? true:false}}">{{item.label}}</text>
+        <text class='two' wx:if="{{item.labels=='' ? true:false}}">{{item.labels}}</text>
+      </view>
+      <view class='title'>{{item.title}}</view>
+      <view class='comman'>{{item.titles}}</view>
+      <view class='comment' wx:if="{{item.comment==0 ? true:false}}">{{item.comment}}条好评</view>
+    </view>
+  </view>
+</view>

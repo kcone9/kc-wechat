@@ -1,0 +1,215 @@
+<view class='head'>
+  <swiper class='swiper' autoplay interval="5000" duration="1000">
+    <block wx:for="{{swiper}}" wx:key="index">
+      <swiper-item class="item">
+        <image src="{{item.img}}" class='image' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='footer'>
+  <view class='service' bindtap='addcart'>
+    <image src='https://kcone.applinzi.com/chat/icon/addcart.png'></image>
+    <text>加入购物车</text>
+  </view>
+  <view class='alone'>
+    <text>单独购买</text>
+  </view>
+  <view class='sth'>
+    <text>新人参团</text>
+  </view>
+</view>
+<view class='section' wx:for="{{detail}}" wx:key="index">
+  <view class='top'>
+    <view class='left'>
+      <view class='one'>
+        <text class='price'>{{item.price}}</text>
+        <view class='ali'>
+          <image src='https://static.biyao.com/mnew/img/product/editor_huabei24@2x_61f9e9e.png'></image>
+          <text>支持花呗分期付款</text>
+        </view>
+      </view>
+      <view class='two'>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+    <view class='right'>
+      <view class='four'>
+        <image src='https://static.biyao.com/mnew/img/product/icon_collection_default@2x_6458530.png'></image>
+        <text>收藏</text>
+      </view>
+      <view class='five'>
+        <text>生产周期:7天</text>
+        <image src='https://kcone.applinzi.com/chat/icon/quest.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='center'>
+    <view class='up'>
+      <text>{{item.titles}}</text>
+    </view>
+    <view class='down'>
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view wx:for="{{rule}}" class='content' wx:key="index">
+      <image src='https://kcone.applinzi.com/chat/icon/success.png'></image>
+      <text>{{item}}</text>
+    </view>
+    <view class="line">
+      <image src="https://kcone.applinzi.com/chat/icon/line.png"></image>
+    </view>
+  </view>
+</view>
+<view class='hr'>
+</view>
+<view class='join'>
+  <view class='one'>
+    <view class='left'>
+      <image src='https://kcone.applinzi.com/chat/icon/head.png'></image>
+      <text>风趣幽默的怀尔德5815</text>
+    </view>
+    <view class='right'>
+      <view class='lack'>
+        <text class='surplus'>还差1人拼团完成</text>
+        <text class='time'>剩余:23:12:12</text>
+      </view>
+      <view class='atten'>
+        <button>新人参团</button>
+      </view>
+    </view>
+  </view>
+  <view class='one'>
+    <view class='left'>
+      <image src='https://kcone.applinzi.com/chat/icon/head.png'></image>
+      <text>风趣幽默的怀尔德5815</text>
+    </view>
+    <view class='right'>
+      <view class='lack'>
+        <text class='surplus'>还差1人拼团完成</text>
+        <text class='time'>剩余:23:12:12</text>
+      </view>
+      <view class='atten'>
+        <button>新人参团</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='playing'>
+  <view class='top'>
+    <view class='pad'>
+      <view class='title'>
+        <text>拼团玩法</text>
+      </view>
+      <view class='rule'>
+        <text>详细规则</text>
+        <image src='https://kcone.applinzi.com/chat/icon/right.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <image src='https://static.biyao.com/mnew/img/master/togetherGroup/rule@2x_c6ce1c9.png'></image>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='evaluate'>
+  <view class='top'>
+    <view class='pad'>
+      <view class='title'>
+        <text>商品评价(142)</text>
+      </view>
+      <view class='rule'>
+        <text>好评度4.7</text>
+        <image src='https://kcone.applinzi.com/chat/icon/right.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='left'>
+      <image src='https://kcone.applinzi.com/chat/icon/head2.png'></image>
+    </view>
+    <view class='right'>
+      <view class='name'>
+        <text>张***雅</text>
+        <image src='https://static.biyao.com/mnew/img/master/base/icon_v0@2x_3b946f4.png'></image>
+      </view>
+      <text class='config'>2019.07.15  双层超柔沐浴球:3只装</text>
+      <text class='content'>还没用  收到了感觉还行吧</text>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='merchant'>
+  <view class='product'>
+    <view class='pad'>
+      <view class='west'>
+        <view class='left'>
+          <image src='https://bfs.biyao.com/group1/M00/1E/38/rBACYVnewjuAeyk_AAB2ZvYyoQg315.jpg'></image>
+        </view>
+        <view class='right'>
+          <view class='up'>
+            <text>Blilin 家居用品</text>
+          </view>
+          <view class='down'>
+            <text>商家质量:4.9</text>
+            <text>服务态度:4.9</text>
+          </view>
+        </view>
+      </view>
+      <view class='east'>
+        <text>全部商品52</text>
+        <image src="https://kcone.applinzi.com/chat/icon/right.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class='commod'>
+    <view wx:for="{{scrollx}}" wx:key="index">
+      <view class='image'>
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='content'>
+        <view class='title'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='label'>
+          <text>{{item.label}}</text>
+        </view>
+        <view class='price'>
+          <text>{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='detail_info'>
+  <view wx:for="{{info}}" wx:key="index">
+    <view class='key'>
+      <text>{{item.mykey}}</text>
+    </view>
+    <view class='value'>
+      <text>{{item.value}}</text>
+    </view>
+  </view>
+  
+</view>
+<view class='details'>
+    <view wx:for="{{img}}" wx:key="index">
+      <image src="{{item.img}}" ></image>
+    </view>
+
+  </view>
+<view class='hr'></view>
+<view class='law'>
+  <view class='up'>
+    <text>《用户服务协议》</text>
+    <text>|</text>
+    <text> 《隐私政策》</text>
+  </view>
+  <view class='down'>
+    <text>必要商城提示您，产品“由某制造商出品”仅为陈述制造商既往生产经历，并不意味着相应产品与特定品牌产品相同或近似。
+	</text>
+  </view>
+</view>

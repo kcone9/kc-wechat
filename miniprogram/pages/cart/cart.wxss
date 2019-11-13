@@ -1,0 +1,171 @@
+.body{
+  width:100%;
+  height:94vh;
+  background-color:#f2f2f2;
+  border-top:1px solid #cccccc;
+}
+.body>.empty{
+  width:100%;
+  height:36vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.body>.empty>.text>text{
+  font-size:13px;
+}
+.body>.empty>.text{
+  margin:20rpx 0;
+}
+.body>.empty>image{
+  width:100rpx;
+  height:100rpx;
+}
+.body>.empty>button{
+  width:68%;
+  height:7vh;
+  font-size:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#b767a5;
+  color:#fff; 
+}
+.active{
+  display:none;
+}
+.hr{
+  width:100%;
+  height:1vh;
+  background-color:#f3f2f2;
+}
+.detail{
+  width:100%;
+}
+.detail>.futher{
+  width:100%;
+  height:30vh;
+  overflow-x:hidden;
+  position:relative;
+}
+.detail>.futher>view{
+  width:145%;
+  height:30vh;
+  display:flex;
+  position:absolute;
+  transform:translate(0,0);
+  transition:all 0.5s;
+  top:0;
+  right:-45%;
+  border-bottom:1px solid #f6f5f5;
+}
+.detail>.futher>view>.hid{
+  width:45%;
+  height:30vh;
+  display:flex;
+}
+.detail>.futher>view>.hid>view{
+  width:50%;
+  height:30vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.detail>.futher>view>.hid>view>text{
+  font-size:26rpx;
+  color:#fff;
+}
+.detail>.futher>view>.hid>.go{
+  background-color:#F7B200;
+}
+.detail>.futher>view>.hid>.del{
+  background-color:#F84242;
+}
+.detail>.futher>view>.left{
+  width:45%;
+  height:30vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.detail>.futher>view>.left>image{
+  width:300rpx;
+  height:300rpx;
+}
+.detail>.futher>view>.right{
+  width:55%;
+  height:30vh;
+  position:relative;
+}
+.detail>.futher>view>.right>.title{
+  overflow:auto;
+}
+.detail>.futher>view>.right>.title>text{
+  font-size:26rpx;
+  font-weight:700;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.detail>.futher>view>.right>.pro{
+  overflow:hidden;
+}
+.detail>.futher>view>.right>.pro>text{
+  font-size:23rpx;
+  text-overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.detail>.futher>view>.right>.label{
+  display:flex;
+  align-items:center;
+  margin-top:6rpx;
+}
+.detail>.futher>view>.right>.label>text{
+  font-size:21rpx;
+  border:1px solid red;
+  padding:2rpx 4rpx;
+}
+.detail>.futher>view>.right>.yell{
+  overflow:hidden;
+}
+.detail>.futher>view>.right>.yell>text{
+  color:#BF9E6B;
+  font-size:29rpx;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.detail>.futher>view>.right>.price>text{
+  color:#F7A701;
+  font-size:35rpx;
+}
+.detail>.futher>view>.right>.contant{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.detail>.futher>view>.right>.contant>text{
+  color:#bbb;
+  font-size:21rpx;
+}
+.detail>.futher>view>.right>.click{
+  display:flex;
+  width:100rpx;
+  height:60rpx;
+  /* border:1px solid red; */
+  position:absolute;
+  right:0;
+  bottom:3vh;
+  /* border:1px solid red; */
+  justify-content:center;
+  align-items:center;
+  margin-right:24rpx;
+}
+.detail>.futher>view>.right>.click>view{
+  width:12rpx;
+  height:12rpx;
+  margin-left:1vh;
+  background-color:#b4b4b4;
+  border-radius:50px;
+}

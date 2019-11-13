@@ -1,0 +1,42 @@
+<view class='body'>
+  <header/>
+  <view class='container'>
+    <view class='left_nav'>
+      <view wx:for="{{nav}}" wx:key="index" class="content {{item.cb?'active':''}}">
+        <text bindtap="navleft" data-id="{{index}}">{{item.title}}</text>
+      </view>
+    </view>
+    <view class='right_nav'>
+      <view class='bigtitle'>
+        <view>
+          <view class='right'></view>
+          <text>{{nav[index].title}}</text>
+          <image class='icon' src='https://kcone.applinzi.com/chat/icon/arr_right.png'></image>
+          <view class='left'></view>
+        </view>
+      </view>
+      <view class='royal' wx:for="{{list}}" wx:key="index">
+        <view class='title'>
+          <view>
+            <view class='left'>
+              <text>{{item.bar}}</text>
+            </view>
+            <view class='right'>
+              <text>{{item.more}}></text>
+            </view>
+          </view>
+        </view>
+        <view class='content'>
+          <view wx:for="{{item.reg}}" wx:for-index="ids" wx:for-item="items" wx:key="ids">
+            <view class='image'>
+              <image src="{{items.img}}"></image>
+            </view>
+            <view class='text'>
+              <text>{{items.titlt}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

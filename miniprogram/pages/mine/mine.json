@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scroll":"../component/scroll/scroll"
+  },
+  "navigationBarTitleText":"我的万世"
+}

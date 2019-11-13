@@ -1,0 +1,50 @@
+<header/>
+<view class='nav'>
+  <view class='container'>
+    <view wx:for="{{nav}}" class="content {{item.cb ? 'active':''}}" wx:key="index">
+      <text bindtap="navbtn" data-ids="{{index}}">{{item.title}}</text>
+    </view>
+  </view>
+  <view class='abs' bindtap="navtab">
+    <image src='https://kcone.applinzi.com/chat/icon/arr_down.png' style="transform:{{navtrans}}"></image>
+  </view>
+  <view class='navtab' style="display:{{navtab}}">
+    <view class='futher' style="width:{{navtabwid}}">
+      <view wx:for="{{nav}}" wx:key="index" class="{{item.cd?'active':''}}">
+        <text bindtap="navtabbtn" data-ids="{{index}}" class="{{item.cd?'active':''}}">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="other" hidden="{{!show}}">
+  <view wx:for="{{navoper}}" wx:key="index" bindtap="gooper">
+    <image src="{{item.img}}"></image>
+    <text>{{item.titlt}}</text>
+  </view>
+</view>
+<view class='show' hidden="{{show}}">
+  <view class='swiper'>
+    <swiper class='wxswiper' indicator-dots="true" autolpay="true" interval="3000" duration='800' circular="true">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <swiper-item>
+          <image class='swiperimg' src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='bottom'>
+    <view>
+      <image src='https://kcone.applinzi.com/chat/icon/cancel.png'></image>
+      <text>大牌制造商直供</text>
+    </view>
+    <view>
+      <image src='https://kcone.applinzi.com/chat/icon/cancel.png'></image>
+      <text>七天无忧退货</text>
+    </view>
+    <view>
+      <image src='https://kcone.applinzi.com/chat/icon/cancel.png'></image>
+      <text>全平台包邮</text>
+    </view>
+  </view>
+</view>
+<scroll id="scroll" bindhidden="hidden"></scroll>

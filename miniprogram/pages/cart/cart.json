@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "login":"../component/login/login"
+  },
+  "navigationBarTitleText":"购物车"
+
+}

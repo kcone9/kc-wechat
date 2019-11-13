@@ -1,0 +1,28 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"miniprogramRoot": "miniprogram/",
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "chat%20w",
+	"scripts": {
+		"beforeCompile": "npm run tsc",
+		"beforePreview": "npm run tsc",
+		"beforeUpload": "npm run tsc"
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"appid": "wx9917f5953e7b381c",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
+}

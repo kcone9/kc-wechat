@@ -1,0 +1,3 @@
+<scroll-view class="myscroll" scroll-y style="height:{{height}}px" bindscrolltolower="getdata">
+  <scroll id="scroll"></scroll>
+</scroll-view>

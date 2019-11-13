@@ -1,0 +1,64 @@
+<view class='header'>
+  <view class='left'>
+    <view class='one'>
+      <image src='http://bfs.biyao.com/group1/M00/07/E3/rBACW10d15-Ae_uxAAAPcZnr47k855.png'></image>
+    </view>
+    <view class='two'>
+      <text>{{user}}</text>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_v@2x_3b946f4.png'></image>
+    </view>
+    <view class='three'>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_nav_message@2x_750ba6a.png'></image>
+    </view>
+  </view>
+  <view class='right'>
+    <view class='border'>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_nav_service@2x_2d290d8.png'></image>
+      <text>服务平台</text>
+    </view>
+    <view class='border'>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_nav_setting@2x_bb1c3de.png'></image>
+      <text>设置</text>
+    </view>
+  </view>
+</view>
+<view class='order'>
+  <view class='left'>
+    <view class='all'>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_order_full@2x_a1ea9ec.png'></image>
+      <text class='top'>全部订单</text>
+      <text class='bottom'>含拼团订单</text>
+    </view>
+    <image src='https://static.biyao.com/mnew/img/master/personalCenter/img_line@2x_90a5483.png'></image>
+  </view>
+  <view class='right'>
+    <view>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_order_pay@2x_ad67213.png'></image>
+      <text>待付款</text>
+    </view>
+    <view>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_order_receive@2x_1a3f235.png'></image>
+      <text>待收货</text>
+    </view>
+    <view>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_order_evaluate@2x_94d42f6.png'></image>
+      <text>待评价</text>
+    </view>
+    <view>
+      <image src='https://static.biyao.com/mnew/img/master/personalCenter/icon_order_refund@2x_6f9c99c.png'></image>
+      <text>售后</text>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='privilege'>
+  <view class='content'>
+    <image src='https://bfs.biyao.com/group1/M00/DD/2A/rBACW1zjYaeAet75AAAE-tgsnTs765.png'></image>
+    <text>特权金</text>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='lift'>
+  <text>新手特权 </text><text class='back'>仅限首单</text>
+</view>
+<scroll id="scroll"></scroll>

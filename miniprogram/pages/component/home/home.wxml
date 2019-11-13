@@ -1,0 +1,4 @@
+<view class="home">
+  <view class='abs'><image src='https://kcone.applinzi.com/chat/icon/home.png'></image></view>
+  <text>购物车</text>
+</view>
